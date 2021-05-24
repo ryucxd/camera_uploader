@@ -77,7 +77,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(34, 12);
+            this.radioButton1.Location = new System.Drawing.Point(25, 12);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(67, 17);
             this.radioButton1.TabIndex = 4;
@@ -89,31 +89,31 @@
             // rd_packing_bsc
             // 
             this.rd_packing_bsc.AutoSize = true;
-            this.rd_packing_bsc.Location = new System.Drawing.Point(140, 48);
+            this.rd_packing_bsc.Location = new System.Drawing.Point(114, 48);
             this.rd_packing_bsc.Name = "rd_packing_bsc";
-            this.rd_packing_bsc.Size = new System.Drawing.Size(108, 17);
+            this.rd_packing_bsc.Size = new System.Drawing.Size(143, 17);
             this.rd_packing_bsc.TabIndex = 5;
             this.rd_packing_bsc.TabStop = true;
-            this.rd_packing_bsc.Text = "Slimline - Packing";
+            this.rd_packing_bsc.Text = "Slimline - Packing (black)";
             this.rd_packing_bsc.UseVisualStyleBackColor = true;
             this.rd_packing_bsc.CheckedChanged += new System.EventHandler(this.Rd_packing_CheckedChanged);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(140, 27);
+            this.radioButton3.Location = new System.Drawing.Point(114, 27);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(120, 17);
+            this.radioButton3.Size = new System.Drawing.Size(153, 17);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Slimline - Production";
+            this.radioButton3.Text = "Slimline - Production (silver)";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(34, 58);
+            this.radioButton2.Location = new System.Drawing.Point(25, 58);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(64, 17);
             this.radioButton2.TabIndex = 7;
@@ -125,7 +125,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(34, 35);
+            this.radioButton4.Location = new System.Drawing.Point(25, 35);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(67, 17);
             this.radioButton4.TabIndex = 8;
@@ -148,11 +148,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSource);
             this.Controls.Add(this.btnUpload);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCameraUpload";
-            this.Text = "Camera Upload";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Camera Upload - SLIMLINE VER";
             this.ResumeLayout(false);
             this.PerformLayout();
 
