@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -135,7 +136,7 @@ namespace DispatchCameraUploader
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            txtSource.Text = @"E:\";
+            txtSource.Text = @"F:\";
             destination = @"\\designsvr1\Public\Dispatch pictures";
         }
 
@@ -143,6 +144,27 @@ namespace DispatchCameraUploader
         {
             txtSource.Text = @"E:\";
             destination = @"\\designsvr1\Public\Welding pictures";
+        }
+
+        private void rdo_slimline_dispatch_CheckedChanged(object sender, EventArgs e)
+        {
+            txtSource.Text = @"G:\";
+            destination = @"\\designsvr1\Public\Slimline Dispatch";
+        }
+
+        private void btnProduction_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"\\DESIGNSVR1\Slimline\Shop floor  operation video`s");
+        }
+
+        private void btnPacking_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"\\designsvr1\Public\Slimline Packing");
+        }
+
+        private void btnDispatch_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"\\designsvr1\Public\Slimline Dispatch");
         }
     }
 }

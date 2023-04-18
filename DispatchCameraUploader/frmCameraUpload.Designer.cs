@@ -39,11 +39,15 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rdo_slimline_dispatch = new System.Windows.Forms.RadioButton();
+            this.btnProduction = new System.Windows.Forms.Button();
+            this.btnPacking = new System.Windows.Forms.Button();
+            this.btnDispatch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(206, 132);
+            this.btnUpload.Location = new System.Drawing.Point(227, 156);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 0;
@@ -53,15 +57,15 @@
             // 
             // txtSource
             // 
-            this.txtSource.Location = new System.Drawing.Point(18, 106);
+            this.txtSource.Location = new System.Drawing.Point(6, 130);
             this.txtSource.Name = "txtSource";
-            this.txtSource.Size = new System.Drawing.Size(263, 20);
+            this.txtSource.Size = new System.Drawing.Size(296, 20);
             this.txtSource.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 87);
+            this.label1.Location = new System.Drawing.Point(12, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
@@ -69,7 +73,7 @@
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(0, 171);
+            this.progressBar2.Location = new System.Drawing.Point(6, 185);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(296, 23);
             this.progressBar2.TabIndex = 3;
@@ -77,7 +81,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(25, 12);
+            this.radioButton1.Location = new System.Drawing.Point(20, 20);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(67, 17);
             this.radioButton1.TabIndex = 4;
@@ -89,7 +93,7 @@
             // rd_packing_bsc
             // 
             this.rd_packing_bsc.AutoSize = true;
-            this.rd_packing_bsc.Location = new System.Drawing.Point(114, 48);
+            this.rd_packing_bsc.Location = new System.Drawing.Point(116, 51);
             this.rd_packing_bsc.Name = "rd_packing_bsc";
             this.rd_packing_bsc.Size = new System.Drawing.Size(143, 17);
             this.rd_packing_bsc.TabIndex = 5;
@@ -101,7 +105,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(114, 27);
+            this.radioButton3.Location = new System.Drawing.Point(116, 12);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(153, 17);
             this.radioButton3.TabIndex = 6;
@@ -113,7 +117,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(25, 58);
+            this.radioButton2.Location = new System.Drawing.Point(20, 66);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(64, 17);
             this.radioButton2.TabIndex = 7;
@@ -125,7 +129,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(25, 35);
+            this.radioButton4.Location = new System.Drawing.Point(20, 43);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(67, 17);
             this.radioButton4.TabIndex = 8;
@@ -134,11 +138,63 @@
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.RadioButton4_CheckedChanged);
             // 
+            // rdo_slimline_dispatch
+            // 
+            this.rdo_slimline_dispatch.AutoSize = true;
+            this.rdo_slimline_dispatch.Location = new System.Drawing.Point(116, 90);
+            this.rdo_slimline_dispatch.Name = "rdo_slimline_dispatch";
+            this.rdo_slimline_dispatch.Size = new System.Drawing.Size(111, 17);
+            this.rdo_slimline_dispatch.TabIndex = 9;
+            this.rdo_slimline_dispatch.TabStop = true;
+            this.rdo_slimline_dispatch.Text = "Slimline - Dispatch";
+            this.rdo_slimline_dispatch.UseVisualStyleBackColor = true;
+            this.rdo_slimline_dispatch.CheckedChanged += new System.EventHandler(this.rdo_slimline_dispatch_CheckedChanged);
+            // 
+            // btnProduction
+            // 
+            this.btnProduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduction.Image = ((System.Drawing.Image)(resources.GetObject("btnProduction.Image")));
+            this.btnProduction.Location = new System.Drawing.Point(265, 4);
+            this.btnProduction.Name = "btnProduction";
+            this.btnProduction.Size = new System.Drawing.Size(37, 33);
+            this.btnProduction.TabIndex = 12;
+            this.btnProduction.UseVisualStyleBackColor = true;
+            this.btnProduction.Click += new System.EventHandler(this.btnProduction_Click);
+            // 
+            // btnPacking
+            // 
+            this.btnPacking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPacking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPacking.Image = ((System.Drawing.Image)(resources.GetObject("btnPacking.Image")));
+            this.btnPacking.Location = new System.Drawing.Point(265, 43);
+            this.btnPacking.Name = "btnPacking";
+            this.btnPacking.Size = new System.Drawing.Size(37, 33);
+            this.btnPacking.TabIndex = 13;
+            this.btnPacking.UseVisualStyleBackColor = true;
+            this.btnPacking.Click += new System.EventHandler(this.btnPacking_Click);
+            // 
+            // btnDispatch
+            // 
+            this.btnDispatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDispatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDispatch.Image = ((System.Drawing.Image)(resources.GetObject("btnDispatch.Image")));
+            this.btnDispatch.Location = new System.Drawing.Point(265, 82);
+            this.btnDispatch.Name = "btnDispatch";
+            this.btnDispatch.Size = new System.Drawing.Size(37, 33);
+            this.btnDispatch.TabIndex = 14;
+            this.btnDispatch.UseVisualStyleBackColor = true;
+            this.btnDispatch.Click += new System.EventHandler(this.btnDispatch_Click);
+            // 
             // frmCameraUpload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 204);
+            this.ClientSize = new System.Drawing.Size(308, 217);
+            this.Controls.Add(this.btnDispatch);
+            this.Controls.Add(this.btnPacking);
+            this.Controls.Add(this.btnProduction);
+            this.Controls.Add(this.rdo_slimline_dispatch);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton3);
@@ -172,5 +228,9 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rdo_slimline_dispatch;
+        private System.Windows.Forms.Button btnProduction;
+        private System.Windows.Forms.Button btnPacking;
+        private System.Windows.Forms.Button btnDispatch;
     }
 }
