@@ -119,7 +119,7 @@ namespace DispatchCameraUploader
         private void Rd_packing_CheckedChanged(object sender, EventArgs e)
         {
             txtSource.Text = @"G:\";
-            destination = @"\\designsvr1\Public\Slimline Packing";
+            destination = @"\\designsvr1\Public\Slimline Photos and Videos\Slimline Packing";
         }
 
         private void RadioButton2_CheckedChanged(object sender, EventArgs e)
@@ -131,7 +131,7 @@ namespace DispatchCameraUploader
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
             txtSource.Text = @"G:\";
-            destination = @"\\DESIGNSVR1\Slimline\Shop floor  operation video`s";
+            destination = @"\\DESIGNSVR1\public\Slimline Photos and Videos\Shop floor  operation video`s";
         }
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -149,22 +149,22 @@ namespace DispatchCameraUploader
         private void rdo_slimline_dispatch_CheckedChanged(object sender, EventArgs e)
         {
             txtSource.Text = @"G:\";
-            destination = @"\\designsvr1\Public\Slimline Dispatch";
+            destination = @"\\designsvr1\Public\Slimline Photos and Videos\Slimline Dispatch";
         }
 
         private void btnProduction_Click(object sender, EventArgs e)
         {
-            Process.Start(@"\\DESIGNSVR1\Slimline\Shop floor  operation video`s");
+            Process.Start(@"\\DESIGNSVR1\public\Slimline Photos and Videos\Shop floor  operation video`s");
         }
 
         private void btnPacking_Click(object sender, EventArgs e)
         {
-            Process.Start(@"\\designsvr1\Public\Slimline Packing");
+            Process.Start(@"\\designsvr1\Public\Slimline Photos and Videos\Slimline Packing");
         }
 
         private void btnDispatch_Click(object sender, EventArgs e)
         {
-            Process.Start(@"\\designsvr1\Public\Slimline Dispatch");
+            Process.Start(@"\\designsvr1\Public\Slimline Photos and Videos\Slimline Dispatch");
         }
     }
 }
