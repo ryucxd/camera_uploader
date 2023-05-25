@@ -166,6 +166,12 @@ namespace DispatchCameraUploader
         {
             Process.Start(@"\\designsvr1\Public\Slimline Photos and Videos\Slimline Dispatch");
         }
+
+        private void chkPackingTemp_CheckedChanged(object sender, EventArgs e)
+        {
+            txtSource.Text = @"E:\";
+            destination = @"\\designsvr1\public\Shop Pictures";
+        }
     }
 }
 

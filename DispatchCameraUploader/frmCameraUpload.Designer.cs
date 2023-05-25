@@ -43,11 +43,12 @@
             this.btnProduction = new System.Windows.Forms.Button();
             this.btnPacking = new System.Windows.Forms.Button();
             this.btnDispatch = new System.Windows.Forms.Button();
+            this.chkPackingTemp = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(227, 156);
+            this.btnUpload.Location = new System.Drawing.Point(227, 182);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 0;
@@ -57,7 +58,7 @@
             // 
             // txtSource
             // 
-            this.txtSource.Location = new System.Drawing.Point(6, 130);
+            this.txtSource.Location = new System.Drawing.Point(6, 156);
             this.txtSource.Name = "txtSource";
             this.txtSource.Size = new System.Drawing.Size(296, 20);
             this.txtSource.TabIndex = 1;
@@ -65,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 114);
+            this.label1.Location = new System.Drawing.Point(12, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(6, 185);
+            this.progressBar2.Location = new System.Drawing.Point(6, 211);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(296, 23);
             this.progressBar2.TabIndex = 3;
@@ -186,11 +187,24 @@
             this.btnDispatch.UseVisualStyleBackColor = true;
             this.btnDispatch.Click += new System.EventHandler(this.btnDispatch_Click);
             // 
+            // chkPackingTemp
+            // 
+            this.chkPackingTemp.AutoSize = true;
+            this.chkPackingTemp.Location = new System.Drawing.Point(12, 120);
+            this.chkPackingTemp.Name = "chkPackingTemp";
+            this.chkPackingTemp.Size = new System.Drawing.Size(105, 17);
+            this.chkPackingTemp.TabIndex = 15;
+            this.chkPackingTemp.TabStop = true;
+            this.chkPackingTemp.Text = "PACKING TEMP";
+            this.chkPackingTemp.UseVisualStyleBackColor = true;
+            this.chkPackingTemp.CheckedChanged += new System.EventHandler(this.chkPackingTemp_CheckedChanged);
+            // 
             // frmCameraUpload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 217);
+            this.ClientSize = new System.Drawing.Size(308, 248);
+            this.Controls.Add(this.chkPackingTemp);
             this.Controls.Add(this.btnDispatch);
             this.Controls.Add(this.btnPacking);
             this.Controls.Add(this.btnProduction);
@@ -232,5 +246,6 @@
         private System.Windows.Forms.Button btnProduction;
         private System.Windows.Forms.Button btnPacking;
         private System.Windows.Forms.Button btnDispatch;
+        private System.Windows.Forms.RadioButton chkPackingTemp;
     }
 }
